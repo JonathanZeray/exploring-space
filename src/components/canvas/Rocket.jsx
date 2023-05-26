@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { useGLTF } from "drei/useGLTF";
 
 export function Rocket(props) {
-  const { nodes, materials } = useGLTF("../src/assets/models/rocket.glb");
+  const { nodes, materials } = useGLTF("/assets/models/rocket.glb");
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
@@ -81,4 +81,4 @@ export function Rocket(props) {
   );
 }
 
-useGLTF.preload("/rocket.glb");
+useGLTF.preload("/assets/models/rocket.glb");
