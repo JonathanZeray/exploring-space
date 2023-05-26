@@ -1,11 +1,12 @@
 import { Canvas } from "@react-three/fiber";
 import { Rocket } from "./components/canvas/Rocket";
 import { OrbitControls } from "drei/OrbitControls";
+import "./App.css";
 
 function App() {
   return (
     <>
-      <Canvas style={{ width: 800, height: 800 }}>
+      <Canvas>
         <ambientLight intensity={2} color="#fff" />
         <OrbitControls />
         <Rocket />

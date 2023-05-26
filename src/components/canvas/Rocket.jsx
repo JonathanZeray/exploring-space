@@ -7,7 +7,7 @@ export function Rocket(props) {
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <group rotation={[Math.PI / 2, 0, 0]}>
-          <group position={[2, -20, -20]} rotation={[0.01, 1.57, 0]}>
+          <group position={[0, -12, -30]} rotation={[0.01, 1.57, 0]}>
             <mesh
               castShadow
               receiveShadow
