@@ -1,28 +1,22 @@
 import React, { useRef } from "react";
-import { useGLTF } from "@react-three/drei";
+import { TextureLoader } from "three/src/loaders/TextureLoader";
+import { useFrame, useLoader } from "@react-three/fiber";
 
-export function Planet(props) {
-  const { nodes, materials } = useGLTF("/assets/models/planet.glb");
+export function Planet() {
+  const colorMap = useLoader(TextureLoader, "mars.jpg");
+  const myMesh = React.useRef();
+  useFrame(({ clock }) => {
+    const a = clock.getElapsedTime();
+    myMesh.current.rotation.y = a / 3;
+  });
   return (
-    <group {...props} dispose={null}>
-      <group scale={0.01}>
-        <directionalLight
-          intensity={1}
-          decay={2}
-          rotation={[0.27, 0.1, -1.23]}
-        />
-
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Sphere.geometry}
-          material={nodes.Sphere.material}
-          position={[-4, 16, 0]}
-          rotation={[Math.PI, -1.1, Math.PI]}
-        />
-      </group>
-    </group>
+    <>
+      <ambientLight intensity={0.2} />
+      <directionalLight />
+      <mesh rotation-x={-0.5} ref={myMesh}>
+        <sphereGeometry args={[3, 32, 32]} />
+        <meshStandardMaterial map={colorMap} />
+      </mesh>
+    </>
   );
 }
-
-useGLTF.preload("/assets/models/planet.glb");
