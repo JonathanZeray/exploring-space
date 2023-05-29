@@ -1,13 +1,13 @@
 import React, { useRef } from "react";
-import { useGLTF } from "drei/useGLTF";
+import { useGLTF } from "@react-three/drei";
 
 export function Rocket(props) {
-  const { nodes, materials } = useGLTF("../src/assets/models/rocket.glb");
+  const { nodes, materials } = useGLTF("/assets/models/rocket.glb");
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <group rotation={[Math.PI / 2, 0, 0]}>
-          <group position={[1.2, -166.88, -392.74]} rotation={[0.01, 1.57, 0]}>
+          <group position={[0, -12, -30]} rotation={[0.01, 1.57, 0]}>
             <mesh
               castShadow
               receiveShadow
@@ -81,4 +81,4 @@ export function Rocket(props) {
   );
 }
 
-useGLTF.preload("/rocket.glb");
+useGLTF.preload("/assets/models/rocket.glb");
