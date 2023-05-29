@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { useGLTF } from "drei/useGLTF";
+import { useGLTF } from "@react-three/drei";
 
 export function Planet(props) {
   const { nodes, materials } = useGLTF("/assets/models/planet.glb");

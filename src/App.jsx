@@ -1,7 +1,7 @@
 import { Canvas } from "@react-three/fiber";
 import { Rocket } from "./components/canvas/Rocket";
 import { Cards } from "./components/Cards";
-import { OrbitControls } from "drei/OrbitControls";
+import { OrbitControls } from "@react-three/drei";
 import "./App.css";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <div id="rocket">
         <Canvas>
           <ambientLight intensity={2} color="#fff" />
-          <OrbitControls />
+          {/* <OrbitControls /> */}
           <Rocket />
         </Canvas>
       </div>
