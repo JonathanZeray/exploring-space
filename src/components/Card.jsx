@@ -1,6 +1,6 @@
 export function Card() {
   return (
-    <div class="w-2/4">
+    <div className="w-2/4">
       <div className="bg-cover bg-gradient-to-r from-indigo-700 to-indigo-900 shadow-lg shadow-[#040c16] group container rounded-md ">
         <h2>Mars</h2>
         <p>
