@@ -14,10 +14,10 @@ export function Planet() {
 
   return (
     <>
-      //Lightning
+      {/* Lightning for sphere/Planet */}
       <ambientLight intensity={0.2} />
       <directionalLight />
-      // Planet
+      {/* Creating the Sphere/Planet */}
       <mesh rotation-x={-0.5} ref={myMesh}>
         <sphereGeometry args={[3, 32, 32]} />
         <meshStandardMaterial map={colorMap} />
