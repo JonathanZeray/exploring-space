@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { TextureLoader } from "three/src/loaders/TextureLoader";
 import { useFrame, useLoader } from "@react-three/fiber";
 
-export function Planet() {
+export function Planet() {  
   //Get texture for the sphere (Planet)
   const colorMap = useLoader(TextureLoader, "mars.jpg");
   // Makes the sphere rotate
