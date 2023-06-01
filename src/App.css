@@ -4,6 +4,10 @@
   background-color: rgb(13, 13, 70);
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   margin: 0;
   padding: 0;
