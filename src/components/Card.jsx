@@ -53,9 +53,9 @@ export function Card() {
             </Canvas>
           </div>
           <div
-            className=" w-2/3 bg-cover bg-gradient-to-r from-gray-600 to-gray-900 shadow-lg shadow-[#040c16] group container rounded-md basis-1/3 h-64"
+            className="text-white pt-6 w-2/3 bg-cover bg-gradient-to-r from-blue-950 to-slate-900 shadow-lg shadow-[#040c16] group container rounded-md basis-1/3"
           >
-            <h2 className="text-3xl my-4 font-bold inline border-b-4 text-gray-300 border-gray-800 ">
+            <h2 className="text-5xl my-4 font-bold inline border-b-4 border-sky-700 ">
               {planet.name}
             </h2>
             <p className="text-left p-10 flex-grow">{planet.info}</p>
