@@ -1,17 +1,3 @@
-// import "./Timeline.css";
-// import { gsap } from "gsap";
-// import { ScrollTrigger } from "gsap/all";
-
-// gsap.registerPlugin(ScrollTrigger);
-
-// export function Timeline () {
-// return (
-//     <>
-
-//     </>
-// );
-// }
-
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { useLayoutEffect, useRef } from "react";
