@@ -7,5 +7,24 @@
 
   .panel {
     flex: 0 0 100vw;
-    height: 100vh;
+  }
+
+  .section-one {
+    height: 100%;
+    display: flex;
+  }
+
+  .section-two {
+    height: 100%;
+    display: flex;
+  }
+
+  .section-three {
+    height: 100%;
+    display: flex;
+    
+  }
+
+  img {
+    width: 100%;
   }

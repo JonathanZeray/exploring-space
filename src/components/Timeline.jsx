@@ -33,7 +33,7 @@ export function Timeline() {
           trigger: slider.current,
           pin: true,
           scrub: 1,
-          snap: 1 / (panels.length - 1),
+          // snap: 1 / (panels.length - 1),
           end: () => "+=" + slider.current.offsetWidth,
         },
       });
@@ -45,15 +45,15 @@ export function Timeline() {
     <div className="App" ref={component}>
       <div ref={slider} className="container">
         <div className="panel">
-          <div>
-            <h1>SCROLL DOWN</h1>
+          <div className="section-one">
+            <img src="/assets/images/space-timeline-1.png" alt="" />
           </div>
         </div>
-        <div className="panel">
-          <h1>ONE</h1>
+        <div className="section-two panel">
+        <img src="/assets/images/space-timeline-2.png" alt="" />
         </div>
-        <div className="panel">
-          <h1>TWO</h1>
+        <div className="section-three panel">
+        <img src="/assets/images/space-timeline-3.png" alt="" />
         </div>
       </div>
     </div>
