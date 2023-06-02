@@ -1,0 +1,11 @@
+  .container {
+    width: 400vw;
+    height: 100vh;
+    display: flex;
+    color: white;
+  }
+
+  .panel {
+    flex: 0 0 100vw;
+    height: 100vh;
+  }
