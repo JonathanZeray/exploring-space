@@ -37,7 +37,6 @@ export function RocketSound() {
 
     gsap.to(AudioEl, {
       scrollTrigger: {
-        markers: true,
         trigger: AudioEl,
         start: () => `top+=${window.innerHeight * 0.001}`,
         end: () => `top+=${window.innerHeight * 1.5}`,

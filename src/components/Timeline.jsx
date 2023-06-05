@@ -19,7 +19,7 @@ export function Timeline() {
           trigger: slider.current,
           pin: true,
           scrub: 1,
-          // snap: 1 / (panels.length - 1),
+          markers: true,
           end: () => "+=" + slider.current.offsetWidth,
         },
       });
@@ -28,8 +28,8 @@ export function Timeline() {
   });
 
   return (
-    <div className="App" ref={component}>
-      <div ref={slider} className="container">
+    <div ref={component}>
+      <div ref={slider} className="timeline-container">
         <div className="panel">
           <div className="section-one">
             <img src="/assets/images/space-timeline-1.png" alt="" />
