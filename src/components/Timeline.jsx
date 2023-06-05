@@ -19,7 +19,6 @@ export function Timeline() {
           trigger: slider.current,
           pin: true,
           scrub: 1,
-          markers: true,
           end: () => "+=" + slider.current.offsetWidth,
         },
       });
