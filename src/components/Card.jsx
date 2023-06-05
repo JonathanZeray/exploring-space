@@ -1,6 +1,7 @@
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import { useState, useEffect, useRef } from "react";
 import { TextureLoader } from "three/src/loaders/TextureLoader";
+import { Timeline } from "./Timeline";
 
 export function Card() {
   const [planets, setPlanets] = useState([]);
@@ -61,6 +62,7 @@ export function Card() {
           </div>
         </div>
       ))}
+      <Timeline />
     </>
   );
 }

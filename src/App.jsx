@@ -1,9 +1,8 @@
 import { Cards } from "./components/Cards";
 import { RocketModel } from "./components/RocketModel";
 import { Background } from "./components/canvas/Background";
-import { Timeline } from "./components/Timeline";
-import "./App.css";
 import { RocketSound } from "./components/RocketSound";
+import "./App.css";
 
 function App() {
   return (
@@ -14,7 +13,6 @@ function App() {
         <RocketModel />
       </div>
       <Cards />
-      <Timeline />
     </div>
   );
 }
