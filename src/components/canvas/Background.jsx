@@ -5,7 +5,7 @@ export function Background() {
   return (
     <div className="absolute -z-1 w-full h-full">
       <Canvas>
-        <Stars />
+        <Stars count={50000} />
       </Canvas>
     </div>
   );
