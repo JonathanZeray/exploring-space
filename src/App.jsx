@@ -1,8 +1,8 @@
 import { Cards } from "./components/Cards";
-import "./App.css";
 import { RocketModel } from "./components/RocketModel";
-import { Canvas } from "@react-three/fiber";
 import { Background } from "./components/canvas/Background";
+import { Timeline } from "./components/Timeline";
+import "./App.css";
 import { RocketSound } from "./components/RocketSound";
 
 function App() {
@@ -14,7 +14,10 @@ function App() {
         <RocketModel />
       </div>
       <Cards />
+      <Timeline />
     </div>
+    </>
+    
   );
 }
 
