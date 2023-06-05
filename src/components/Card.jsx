@@ -1,6 +1,6 @@
-import { Canvas } from "@react-three/fiber";
-import { Planet } from "./canvas/Planet";
-import React, { useState, useEffect } from "react";
+import { Canvas, useFrame, useLoader } from "@react-three/fiber";
+import { useState, useEffect, useRef } from "react";
+import { TextureLoader } from "three/src/loaders/TextureLoader";
 
 export function Card() {
   const [planets, setPlanets] = useState([]);
@@ -19,20 +19,42 @@ export function Card() {
     fetchPlanets();
   }, []);
 
+  const Planet = ({ planet }) => {
+    const meshRef = useRef();
+
+    useFrame(({ clock }) => {
+      const a = clock.getElapsedTime();
+      if (meshRef.current) {
+        meshRef.current.rotation.y = a / 3;
+      }
+    });
+
+    return (
+      <mesh ref={meshRef} rotation-x={0}>
+        <sphereGeometry args={[3, 32, 32]} />
+        <meshStandardMaterial map={useLoader(TextureLoader, planet.texture)} />
+      </mesh>
+    );
+  };
+
   return (
     <>
       {planets.map((planet) => (
         <div
           key={planet.id}
-          className=" text-center flex content-center py-10 h-screen flex-wrap"
+          className="text-center flex content-center py-10 h-screen flex-wrap"
         >
-          <div className=" basis-1/2">
+          <div className="basis-1/2">
             <Canvas>
-              <Planet />
+              {/* Lighting for sphere/Planet */}
+              <ambientLight intensity={0.2} />
+              <directionalLight />
+              {/* Creating the Sphere/Planet */}
+              <Planet planet={planet} />
             </Canvas>
           </div>
           <div className="text-white pt-6 w-2/3 bg-cover bg-gradient-to-r from-blue-950 to-slate-900 shadow-lg shadow-[#040c16] group container rounded-md basis-1/3">
-            <h2 className="text-5xl my-4 font-bold inline border-b-4 border-sky-700 ">
+            <h2 className="text-5xl my-4 font-bold inline border-b-4 border-sky-700">
               {planet.name}
             </h2>
             <p className="text-left p-10 flex-grow">{planet.info}</p>
