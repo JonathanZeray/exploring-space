@@ -12,7 +12,7 @@ export function LandingPage() {
 	function handleClick() {
 		setTimeout(() => {
 			navigate("/Explore");
-		}, 2800);
+		}, 3000);
 	}
 	function startAudio () {
 		new Audio(launchAudio).play();
