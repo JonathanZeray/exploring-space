@@ -3,8 +3,8 @@ import { LandingPageText } from "./canvas/3dText";
 import { Canvas } from "@react-three/fiber";
 import { Loader } from "@react-three/drei";
 import { useNavigate } from "react-router-dom";
+import launchAudio from "/assets/Audio/launchAudio.mp3";
 import { Background } from "./canvas/Background";
-// import { Link } from "react-router-dom";
 
 export function LandingPage() {
   const navigate = useNavigate();
@@ -26,7 +26,10 @@ export function LandingPage() {
       </Canvas>
       <Loader />
       <button
-        onClick={handleClick}
+        onClick={() => {
+          handleClick();
+          startAudio();
+        }}
         className="absolute justify-self-center bottom-1/4 z-1 w-60 p-5 rounded-md bg-indigo-800 text-white text-lg drop-shadow-xl"
       >
         ENTER SPACE
