@@ -11,7 +11,7 @@ export function Explore() {
   return (
     <>
       <div className="relative">
-        <Background />
+        <Background count={80000} />
         <RocketSound />
         <div id="rocket">
           <RocketModel />

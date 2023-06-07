@@ -3,18 +3,19 @@ import { LandingPageText } from "./canvas/3dText";
 import { Canvas } from "@react-three/fiber";
 import { Loader } from "@react-three/drei";
 import { useNavigate } from "react-router-dom";
+import { Background } from "./canvas/Background";
 // import { Link } from "react-router-dom";
 
 export function LandingPage() {
-
-	const navigate = useNavigate();
+  const navigate = useNavigate();
 
   function handleClick() {
-	navigate("/Explore");
+    navigate("/Explore");
   }
 
   return (
     <div className="relative w-screen h-screen grid ">
+      <Background count={2000} />
       <Canvas>
         {/* <pointLight position={[0, 20, 10]} intensity={1.5}/> */}
         <ambientLight intensity={0.1} />
