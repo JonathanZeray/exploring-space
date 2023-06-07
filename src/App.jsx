@@ -1,7 +1,7 @@
 import { Explore } from "./components/Explore";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import "./App.css";
 import { LandingPage } from "./components/LandingPage";
+import "./App.css";
 
 function App() {
   return (

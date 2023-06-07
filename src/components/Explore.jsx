@@ -4,7 +4,6 @@ import { Background } from "./canvas/Background";
 import { RocketSound } from "./RocketSound";
 import { SolarSystem } from "./SolarSystem";
 import { Loader } from "@react-three/drei";
-import { Suspense } from "react";
 import "../App.css";
 
 export function Explore() {
