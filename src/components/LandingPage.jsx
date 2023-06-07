@@ -9,8 +9,14 @@ import { Background } from "./canvas/Background";
 export function LandingPage() {
   const navigate = useNavigate();
 
+  function startAudio() {
+    new Audio(launchAudio).play();
+  }
+
   function handleClick() {
-    navigate("/Explore");
+    setTimeout(() => {
+      navigate("/Explore");
+    }, 3000);
   }
 
   return (
