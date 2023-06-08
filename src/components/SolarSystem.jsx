@@ -4,7 +4,6 @@ export function SolarSystem() {
       <iframe
         className="relative z-20 w-9/12 h-96 "
         src="https://solar-system-vr.vercel.app/"
-        frameborder="0"
       ></iframe>
     </div>
   );

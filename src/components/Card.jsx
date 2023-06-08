@@ -2,6 +2,7 @@ import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import { useState, useEffect, useRef } from "react";
 import { TextureLoader } from "three/src/loaders/TextureLoader";
 import { Timeline } from "./Timeline";
+import { DoubleSide } from "three";
 
 export function Card() {
   const [planets, setPlanets] = useState([]);
@@ -31,19 +32,31 @@ export function Card() {
     });
 
     return (
-      <mesh ref={meshRef} rotation-x={0}>
-        <sphereGeometry args={[3, 32, 32]} />
-        <meshStandardMaterial map={useLoader(TextureLoader, planet.texture)} />
-      </mesh>
+      <>
+        <mesh ref={meshRef} rotation-x={0}>
+          <sphereGeometry attach="geometry" args={[2.5, 32, 32]} />
+          <meshStandardMaterial
+            map={useLoader(TextureLoader, planet.texture)}
+          />
+        </mesh>
+        {planet.name === "Saturn" && ( // Add conditional rendering for Saturn
+          <mesh rotation={[1.6, 0, 10]}>
+            <ringGeometry attach="geometry" args={[3.5, 2, 64]} />
+            <meshStandardMaterial color="darkgray" side={DoubleSide} />
+          </mesh>
+        )}
+      </>
     );
   };
 
   return (
     <>
-      {planets.map((planet) => (
+      {planets.map((planet, i) => (
         <div
           key={planet.id}
-          className="text-center flex content-center py-10 h-screen flex-wrap"
+          className={`text-center flex content-center py-10 h-screen flex-wrap ${
+            i % 2 ? "flex-row-reverse" : ""
+          }`}
         >
           <div className="basis-1/2">
             <Canvas>
