@@ -52,17 +52,6 @@ export function LandingPageText(props) {
             rotation={[0.3, Math.PI / 2, 0]}
           />
         </group>
-        <directionalLight
-          intensity={0.7}
-          decay={2}
-          rotation={[-0.63, 0.5, 0.99]}
-        />
-        <OrthographicCamera
-          makeDefault={false}
-          far={100000}
-          near={0}
-          position={[0, 0, 1000]}
-        />
         <mesh
           castShadow
           receiveShadow
