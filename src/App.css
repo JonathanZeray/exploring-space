@@ -10,6 +10,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   background: rgb(52, 50, 57);
   background: linear-gradient(
     45deg,
