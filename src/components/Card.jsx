@@ -23,6 +23,10 @@ export function Card() {
 
   const Planet = ({ planet }) => {
     const meshRef = useRef();
+    const colorMap = useLoader(
+      TextureLoader,
+      "/assets/textures/saturn-rings.jpg"
+    );
 
     useFrame(({ clock }) => {
       const a = clock.getElapsedTime();
@@ -40,9 +44,9 @@ export function Card() {
           />
         </mesh>
         {planet.name === "Saturn" && ( // Add conditional rendering for Saturn
-          <mesh rotation={[1.6, 0, 10]}>
-            <ringGeometry attach="geometry" args={[3.5, 2, 64]} />
-            <meshStandardMaterial color="darkgray" side={DoubleSide} />
+          <mesh rotation={[1.65, -0.13, -37.5]}>
+            <ringGeometry attach="geometry" args={[3.8, 2.8, 65]} />
+            <meshStandardMaterial map={colorMap} side={DoubleSide} />
           </mesh>
         )}
       </>
