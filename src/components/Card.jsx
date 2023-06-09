@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { TextureLoader } from "three/src/loaders/TextureLoader";
 import { Timeline } from "./Timeline";
 import { DoubleSide } from "three";
+import { Float } from "@react-three/drei";
 
 export function Card() {
   const [planets, setPlanets] = useState([]);
@@ -31,7 +32,7 @@ export function Card() {
     useFrame(({ clock }) => {
       const a = clock.getElapsedTime();
       if (meshRef.current) {
-        meshRef.current.rotation.y = a / 3;
+        meshRef.current.rotation.y = a / 5;
       }
     });
 
@@ -68,7 +69,9 @@ export function Card() {
               <ambientLight intensity={0.2} />
               <directionalLight />
               {/* Creating the Sphere/Planet */}
-              <Planet planet={planet} />
+              <Float floatIntensity={4} rotationIntensity={0.5}>
+                <Planet planet={planet} />
+              </Float>
             </Canvas>
           </div>
           <div className="text-white pt-6 w-2/3 bg-cover bg-gradient-to-r from-blue-950 to-slate-900 shadow-lg shadow-[#040c16] group container rounded-md basis-1/3">
