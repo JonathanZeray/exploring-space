@@ -1,19 +1,30 @@
-import React, { useRef, useLayoutEffect } from "react";
+import React, { useRef, useLayoutEffect, useState } from "react";
 import { useGLTF, useScroll } from "@react-three/drei";
 import { OrthographicCamera } from "@react-three/drei";
 import gsap from "gsap";
 import { useFrame } from "@react-three/fiber";
+import rocketSound from "/assets/Audio/rocket-sound.mp3";
 
 export function Rocket(props) {
   const { nodes, materials } = useGLTF("/assets/models/withflag.glb");
+  const [played, setPlayed] = useState(false);
 
   const ref = useRef();
   const tl = useRef();
   const rocketRef = useRef();
   const scroll = useScroll();
+  const AudioEl = new Audio(rocketSound);
+  AudioEl.loop = false;
 
   useFrame(() => {
     tl.current.seek(scroll.offset * tl.current.duration());
+    const a = scroll.visible(1 / 3, 2 / 3);
+    if (a && !played) {
+      setPlayed(true);
+      AudioEl.play();
+    } else {
+      AudioEl.pause();
+    }
   });
 
   useLayoutEffect(() => {

@@ -23,7 +23,6 @@ export function LandingPage() {
     <div className="relative w-screen h-screen grid ">
       <Background count={2000} />
       <Canvas>
-        {/* <pointLight position={[0, 20, 10]} intensity={1.5}/> */}
         <ambientLight intensity={0.1} />
         <directionalLight color="#e7eaea" position={[0, 0, 5]} />
         <Float speed={0.8}>
