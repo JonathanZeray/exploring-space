@@ -14,8 +14,8 @@ export function Explore() {
           <RocketModel />
         </div>
         <Cards />
+        <SolarSystem />
       </div>
-      <SolarSystem />
       <Loader />
     </>
   );
