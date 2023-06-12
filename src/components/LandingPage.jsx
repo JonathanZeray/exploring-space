@@ -4,18 +4,23 @@ import { Loader, PresentationControls, Float } from "@react-three/drei";
 import { useNavigate } from "react-router-dom";
 import launchAudio from "/assets/Audio/launchAudio.mp3";
 import { Background } from "./canvas/Background";
+import { useState } from "react";
 
 export function LandingPage() {
+  const [clicked, setClicked ] = useState(false);
   const navigate = useNavigate();
 
   function startAudio() {
-    new Audio(launchAudio).play();
+    if (!clicked) {
+      setClicked(true)
+      new Audio(launchAudio).play();
+    }
   }
 
   function handleClick() {
     setTimeout(() => {
       navigate("/Explore");
-    }, 2000);
+    }, 2500);
   }
 
   return (
