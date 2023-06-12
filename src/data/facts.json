@@ -14,7 +14,7 @@
   {
     "name": "Venus",
     "id": "venus",
-    "info": "Venus is the second planet from the Sun and is Earth's closest planetary neighbor. Venus has a thick, toxic atmosphere filled with carbon dioxide and it's perpetually shrouded in thick, yellowish clouds of sulfuric acid that trap heat, causing a runaway greenhouse effect. It's the hottest planet in our solar system, even though Mercury is closer to the Sun. Surface temperatures on Venus are about 475 degrees Celsius - hot enough to melt lead. Scientists think it's possible some volcanoes on Venus are still active. Venus rotates (backwards) very slowly on its axis - one day on Venus lasts 243 Earth days. The planet orbits the Sun faster than Earth, however, so one year on Venus takes only about 225 Earth days, making a Venusian day longer than its year!",
+    "info": "Venus is the second planet from the Sun and is Earth's closest planetary neighbor. It's the hottest planet in our solar system, even though Mercury is closer to the Sun. Surface temperatures on Venus are about 475 degrees Celsius - hot enough to melt lead. Scientists think it's possible some volcanoes on Venus are still active. Venus rotates (backwards) very slowly on its axis - one day on Venus lasts 243 Earth days. The planet orbits the Sun faster than Earth, however, so one year on Venus takes only about 225 Earth days, making a Venusian day longer than its year!",
     "texture": "/assets/textures/venus.jpg"
   },
   {

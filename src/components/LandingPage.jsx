@@ -16,7 +16,7 @@ export function LandingPage() {
   function handleClick() {
     setTimeout(() => {
       navigate("/Explore");
-    }, 3000);
+    }, 2000);
   }
 
   return (
@@ -35,7 +35,7 @@ export function LandingPage() {
           handleClick();
           startAudio();
         }}
-        className="absolute justify-self-center bottom-1/4 z-1 w-60 p-5 rounded-md bg-indigo-800 text-white text-lg drop-shadow-xl"
+        className="absolute justify-self-center bottom-1/4 z-1 w-60 p-5 rounded-md bg-indigo-800 hover:bg-indigo-600 text-white text-lg drop-shadow-xl"
       >
         ENTER SPACE
       </button>
