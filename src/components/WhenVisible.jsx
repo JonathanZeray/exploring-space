@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export function WhenVisible({children}) {
+export function HeaderVisible({children}) {
     return (
         <motion.div
         initial="hidden"
@@ -17,10 +17,7 @@ export function WhenVisible({children}) {
     )
 }
 
-//Ta bort koden nedtill/Skapa separat komponent för den på måndag.
-// Skillnaden är variants, nedre kod animation påverkar bara opacity och inte Y axeln. 
-
-export function WhenVisible2({children}) {
+export function TextVisible({children}) {
     return (
         <motion.div
         initial="hidden"

@@ -4,7 +4,7 @@ import { TextureLoader } from "three/src/loaders/TextureLoader";
 import { Timeline } from "./Timeline";
 import { DoubleSide } from "three";
 import { Float } from "@react-three/drei";
-import { WhenVisible, WhenVisible2 } from "./WhenVisible";
+import { HeaderVisible, TextVisible } from "./WhenVisible";
 
 export function Card() {
   const [planets, setPlanets] = useState([]);
@@ -76,14 +76,14 @@ export function Card() {
             </Canvas>
           </div>
           <div className="text-white pt-6 w-2/3 bg-cover bg-gradient-to-r from-blue-950 to-slate-900 shadow-lg shadow-[#040c16] group container rounded-md basis-1/3">
-            <WhenVisible>
+            <HeaderVisible>
             <h2 className="text-5xl my-4 font-bold inline border-b-4 border-sky-700">
               {planet.name}
             </h2>
-            </WhenVisible>
-            <WhenVisible2>
+            </HeaderVisible>
+            <TextVisible>
             <p className="text-left p-10 flex-grow">{planet.info}</p>
-            </WhenVisible2>
+            </TextVisible>
           </div>
         </div>
       ))}
