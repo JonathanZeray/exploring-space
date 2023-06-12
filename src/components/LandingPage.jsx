@@ -1,7 +1,6 @@
-import { Float } from "@react-three/drei";
 import { LandingPageText } from "./canvas/3dText";
 import { Canvas } from "@react-three/fiber";
-import { Loader } from "@react-three/drei";
+import { Loader, PresentationControls, Float } from "@react-three/drei";
 import { useNavigate } from "react-router-dom";
 import launchAudio from "/assets/Audio/launchAudio.mp3";
 import { Background } from "./canvas/Background";
@@ -16,7 +15,7 @@ export function LandingPage() {
   function handleClick() {
     setTimeout(() => {
       navigate("/Explore");
-    }, 3000);
+    }, 2000);
   }
 
   return (
@@ -25,9 +24,12 @@ export function LandingPage() {
       <Canvas>
         <ambientLight intensity={0.1} />
         <directionalLight color="#e7eaea" position={[0, 0, 5]} />
+        <PresentationControls
+        snap={true} >
         <Float speed={0.8}>
           <LandingPageText />
         </Float>
+        </PresentationControls>
       </Canvas>
       <Loader />
       <button
@@ -35,7 +37,7 @@ export function LandingPage() {
           handleClick();
           startAudio();
         }}
-        className="absolute justify-self-center bottom-1/4 z-1 w-60 p-5 rounded-md bg-indigo-800 text-white text-lg drop-shadow-xl"
+        className="absolute justify-self-center bottom-1/4 z-1 w-60 p-5 rounded-md bg-indigo-800 hover:bg-indigo-600 text-white text-lg drop-shadow-xl"
       >
         ENTER SPACE
       </button>
