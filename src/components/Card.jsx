@@ -12,7 +12,7 @@ export function Card() {
   useEffect(() => {
     const fetchPlanets = async () => {
       try {
-        const response = await fetch("../src/data/facts.json");
+        const response = await fetch("../../facts.json");
         const data = await response.json();
         setPlanets(data);
       } catch (error) {
