@@ -1,0 +1,33 @@
+#rocket {
+  height: 100vh;
+  width: 100vw;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: rgb(52, 50, 57);
+  background: linear-gradient(
+    45deg,
+    rgba(52, 50, 57, 1) 0%,
+    rgba(14, 15, 46, 1) 15%,
+    rgba(12, 30, 68, 1) 32%,
+    rgba(14, 36, 60, 1) 43%,
+    rgba(5, 30, 77, 1) 53%,
+    rgba(18, 18, 70, 1) 63%,
+    rgba(3, 44, 85, 1) 70%,
+    rgba(6, 23, 70, 1) 77%,
+    rgba(22, 44, 57, 1) 88%,
+    rgba(22, 42, 65, 1) 100%
+  );
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, p {
+  font-family: 'Poppins', sans-serif;
+}

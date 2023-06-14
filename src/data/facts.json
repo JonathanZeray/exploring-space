@@ -1,0 +1,62 @@
+[
+  {
+    "name": "The Sun",
+    "id": "sun",
+    "info": "Our Sun is a 4.5 billion-year-old star - a hot glowing ball of hydrogen and helium at the center of our solar system. Its gravity holds the solar system together, keeping everything from the biggest planets to the smallest bits of debris in orbit around it. The hottest part of the Sun is its core, where temperatures top 15 million degrees Celsius. Like all stars, the Sun will eventually run out of energy - but scientists don't expect this to happen for another 5 billion years or so.",
+    "texture": "/assets/textures/sun.jpg"
+  },
+  {
+    "name": "Mercury",
+    "id": "mercury",
+    "info": "Mercury is the planet that orbits the closest to the Sun. As the smallest planet in our solar system, Mercury is only slightly larger than Earth's Moon. From the surface of Mercury, the Sun would appear more than three times as large as it does when viewed from Earth, and the sunlight would be as much as seven times brighter. Because of Mercury's egg-shaped orbit, and sluggish rotation, the Sun appears to rise briefly, set, and rise again from some parts of the planet's surface. Mercury is the fastest planet in our solar system - traveling through space at nearly 47 kilometers per second and a year on Mercury is only 88 days long.",
+    "texture": "/assets/textures/mercury.jpg"
+  },
+  {
+    "name": "Venus",
+    "id": "venus",
+    "info": "Venus is the second planet from the Sun and is Earth's closest planetary neighbor. It's the hottest planet in our solar system, even though Mercury is closer to the Sun. Surface temperatures on Venus are about 475 degrees Celsius - hot enough to melt lead. Scientists think it's possible some volcanoes on Venus are still active. Venus rotates (backwards) very slowly on its axis - one day on Venus lasts 243 Earth days. The planet orbits the Sun faster than Earth, however, so one year on Venus takes only about 225 Earth days, making a Venusian day longer than its year!",
+    "texture": "/assets/textures/venus.jpg"
+  },
+  {
+    "name": "Earth",
+    "id": "earth",
+    "info": "When the solar system settled into its current layout about 4.5 billion years ago, Earth - our home planet - formed when gravity pulled swirling gas and dust in to become the third planet from the Sun. At a distance of 150 million kilometers it takes about eight minutes for light from the Sun to reach our planet. Earth is the only place we know of so far that's inhabited by living things, since it has a very hospitable temperature and mix of chemicals that have made life abundant here. Most notably, Earth is unique in that most of our planet is covered in liquid water, since the temperature allows liquid water to exist for extended periods of time. Earth's vast oceans provided a convenient place for life to begin about 3.8 billion years ago.",
+    "texture": "/assets/textures/earth.jpg"
+  },
+  {
+    "name": "The Moon",
+    "id": "moon",
+    "info": "Earth's Moon is the only place beyond Earth where humans have set foot. The brightest and largest object in our night sky, the Moon makes Earth a more livable planet by moderating our home planet's wobble on its axis, leading to a relatively stable climate. It also causes tides, creating a rhythm that has guided humans for thousands of years. The Moon was likely formed after a Mars-sized body collided with Earth. Earth's only natural satellite is simply called 'the Moon' because people didn't know other moons existed until Galileo Galilei discovered four moons orbiting Jupiter in 1610.",
+    "texture": "/assets/textures/moon.jpg"
+  },
+  {
+    "name": "Mars",
+    "id": "mars",
+    "info": "Mars is the fourth planet from the Sun - a dusty, cold, desert world with a very thin atmosphere. But Mars is also a dynamic planet with seasons, polar ice caps, canyons, extinct volcanoes, and evidence that it was even more active in the past. Scientists don't expect to find living things currently thriving on Mars. Instead, they're looking for signs of life that existed long ago, when Mars was warmer and covered with water. Despite being inhospitable to humans, robotic explorers are serving as pathfinders to eventually get humans to the surface of the Red Planet.",
+    "texture": "/assets/textures/mars.jpg"
+  },
+  {
+    "name": "Jupiter",
+    "id": "jupiter",
+    "info": "Jupiter is more than twice as massive than the other planets of our solar system combined. Jupiter's familiar stripes and swirls are actually cold, windy clouds of ammonia and water, floating in an atmosphere of hydrogen and helium. Jupiter's iconic Great Red Spot is a giant storm bigger than Earth that has raged for hundreds of years. Jupiter has more than 75 moons.",
+    "texture": "/assets/textures/jupiter.jpg"
+  },
+  {
+    "name": "Saturn",
+    "id": "saturn",
+    "info": "Adorned with a dazzling, complex system of icy rings, Saturn is unique in our solar system. The other giant planets have rings, but none are as spectacular as Saturn's. Saturn is the sixth planet from the Sun and the second-largest planet in our solar system. Like fellow gas giant Jupiter, Saturn is a massive ball made mostly of hydrogen and helium. About two tons of Saturn's mass came from Earth— a spacecraft called the Cassini was intentionally vaporized in Saturn's atmosphere in 2017. Saturn has 53 known moons with an additional 29 moons awaiting confirmation of their discovery—that is a total of 82 moons. ",
+    "texture": "/assets/textures/saturn.jpg"
+  },
+  {
+    "name": "Uranus",
+    "id": "uranus",
+    "info": "Uranus is the seventh planet from the Sun, and it was the first planet found with the aid of a telescope in 1781. It is named after Uranus, the greek god of the sky. It rotates at a nearly 90-degree angle from the plane of its orbit. This unique tilt makes Uranus appear to spin on its side. Uranus has 13 known rings. The inner rings are narrow and dark and the outer rings are brightly colored.",
+    "texture": "/assets/textures/uranus.jpg"
+  },
+  {
+    "name": "Neptune",
+    "id": "neptune",
+    "info": "The eighth and most distant major planet orbiting our Sun is dark, cold and whipped by supersonic winds. It was the first planet located through mathematical calculations before its discovery. Neptune is an ice giant. Most of its mass is a hot, dense fluid of 'icy' materials - water, methane and ammonia - above a small rocky core. In 2011 Neptune completed its first 165-year orbit since its discovery in 1846. NASA's Voyager 2 is the only spacecraft to have visited Neptune up close. It flew past in 1989 on its way out of the solar system.",
+    "texture": "/assets/textures/neptune.jpg"
+  }
+]
