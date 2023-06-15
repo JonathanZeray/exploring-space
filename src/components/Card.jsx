@@ -8,18 +8,22 @@ import { HeaderVisible, TextVisible } from "./WhenVisible";
 
 export function Card() {
   const [planets, setPlanets] = useState([]);
-
+  
   useEffect(() => {
     const fetchPlanets = async () => {
       try {
-        const response = await fetch("/facts.json");
+        const response = await fetch("/data/facts.json", {
+          headers: {
+            Accept: "application/json",
+          },
+        });
         const data = await response.json();
         setPlanets(data);
       } catch (error) {
         console.error("Error fetching planets:", error);
       }
     };
-
+  
     fetchPlanets();
   }, []);
 
