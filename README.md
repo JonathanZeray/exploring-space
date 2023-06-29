@@ -1,6 +1,6 @@
 # Project Name: Exploring Space
 
-## Description
+## Description (Project was made to be viewed on desktop)
 
 Exploring Space is an educational website dedicated to providing an immersive and interactive experience for visitors to learn about space and its planets. This project was developed as part of the "Exploring Code" course at our school, where we aimed to incorporate various technological, strategic, and experiential techniques covered in the course.
 
@@ -49,4 +49,4 @@ https://github.com/Norozkhani
 https://github.com/MalinWallander
 
 ## How to Contribute
-We welcome contributions to the Exploring Space project. If you are interested in enhancing the website (especially the performance) or have ideas to improve the user experience, please feel free to submit a pull request. 
+We welcome contributions to the Exploring Space project. If you are interested in enhancing the website (especially the performance or making the project responsive) or have ideas to improve the user experience, please feel free to submit a pull request. 
